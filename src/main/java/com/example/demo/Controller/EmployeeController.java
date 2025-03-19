@@ -20,7 +20,7 @@ import com.example.demo.Service.EmployeeService;
 public class EmployeeController {
 	@Autowired
 	EmployeeService es;
-	@PostMapping(value="/postSingleEmp")
+	@PostMapping(value="/postSingle")
 	public String postEmp(@RequestBody Employee e) {
 		return es.postEmp(e);
 	}
